@@ -1,0 +1,68 @@
+<div class="fork">
+  <div class="top">
+    <div class="fork-top"></div>
+    <div class="air"></div>
+    <div class="fork-top"></div>
+    <div class="air"></div>
+    <div class="fork-top"></div>
+    <div class="air"></div>
+    <div class="fork-top"></div>
+  </div>
+  <div class="bottom">
+  </div>
+</div>
+
+<style>
+  body {
+   	display:flex;
+    align-items:center;
+    justify-content:center;
+    background: #6592cf;
+  }
+  .top {
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%
+  }
+  .fork-top {
+    width: 20px;
+    height: 100px;
+    background: #060F55;
+    border-radius: 10px 10px 0 0;
+    position: relative
+  }
+  .fork-top::after{
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 100%;
+    border-radius: 0 0 50% 50%;
+    left: 20px;
+    top: 90px;
+    z-index: 1;
+    background:  #6592cf;
+  }
+  .bottom {
+    height: 100px;
+    background:#060F55;
+    border-radius:  120%;
+    position:relative;
+  }
+  .bottom::after {
+    content: '';
+    height: 50px;
+    width: 100%;
+    background: #060F55;
+    top: -5;
+    position: absolute
+  }
+  .fork::after {
+    content: '';
+    height: 60px;
+    width: 20px;
+    background: #060F55;
+    position: absolute;
+    left: 190;
+    top: 240
+  }
+</style>

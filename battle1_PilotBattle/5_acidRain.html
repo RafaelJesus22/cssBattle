@@ -1,0 +1,40 @@
+<div class="container" >
+	<div class="c3"></div>
+  <div class="c2"></div>
+  <div class="c1"></div>
+</div>
+<style>
+body {
+  background:#0B2429;
+  position: relative
+}
+.container {
+  display: flex;
+  justify-content: center
+}
+.c1,.c2,.c3 {
+  background:#F3AC3C;
+  width: 120px; 
+  height:120px;
+  border-radius: 50%;
+  position: absolute
+}
+.c2,.c3{
+  border-radius: 50% 0 50% 50%
+}
+.c3 {
+  top:142px;
+  left: 72px;
+  z-index: 3
+}
+.c2 {
+  z-index: 2;
+  background: #998235;
+  top: 82px
+}
+.c1 {
+  z-index: 1;
+  right: 72px;
+  top: 22px
+}
+</style>

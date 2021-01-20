@@ -1,0 +1,40 @@
+<div class="container" >
+  <div class="tl" > </div>
+  <div class="tr" > </div>
+  <div class="bl" > </div>
+  <div class="br" > </div>
+</div>
+<style>
+body {
+  background:#E3516E;
+  display: flex;
+  justify-content: center;
+  align-items:center
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.tl, .tr, .bl {
+  height: 100px;
+  width: 100px
+}
+.tl{
+  border-radius: 100%0 0 0;
+  background: #51B5A9;
+}
+.tr{
+  border-radius: 0 100% 0 0;
+  background: #FADE8B;
+  height: 100
+}
+.bl{
+  border-radius: 0 0 0 100%;
+  background: #F7F3D7;
+  margin: 0
+}
+
+</style>
