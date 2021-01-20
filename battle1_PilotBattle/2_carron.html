@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="square"></div>
+  <div class="square right" ></div>
+  <div class="square"></div>
+  <div class="square right"></div>
+</div>
+<style>
+  body {
+    background: #62374e;
+    margin: 50px 50px;
+  }
+  .square {
+    width: 50px;
+    height: 50px;
+    background: #fdc57b
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+	grid-gap: 100px
+  }
+  .right {
+    margin-left: 50px
+  }
+</style>
