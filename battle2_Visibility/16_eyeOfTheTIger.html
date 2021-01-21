@@ -1,0 +1,59 @@
+
+
+
+<div class="container center">
+  <div class="inner-circle center">
+    <div class="middle-circle" />
+  </div>
+  <div class="square left" />
+  <div class="square right" />
+</div>
+
+
+<style>
+  body {
+    background: #0B2429
+  }
+  .center, body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    height: 200px;
+    width: 200px;
+    background: #998235;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+  }
+  .inner-circle {
+   	height: 140px;
+    width: 140px;
+    background: #F3AC3C;
+    border-radius: 50%;
+    border: 20px solid #0B2429
+  }
+  .middle-circle {
+	height:50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #0B2429
+  }
+    .square {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: #998235;
+  }
+  .left {
+    z-index: -1;
+    transform: rotate(45deg);
+    left: -20;
+  }
+  .right {
+    right: -100;
+    top: -100;
+  }
+</style>
