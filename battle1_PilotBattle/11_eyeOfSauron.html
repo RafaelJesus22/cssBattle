@@ -1,0 +1,47 @@
+<div class="main">
+  <div class="inner-circle"></div>
+</div>
+<style>
+  body, .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body {
+    background: #191210
+  }
+  .main {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #191210;
+    border: 20px solid #ECA03D;
+    position: relative;
+  }
+  .main::after, .main::before {
+    content: '';
+    position: absolute;
+    background: transparent;
+    border-radius:  50%;
+    border-top: 20px solid #ECA03D;
+    border-left: 20px solid #ECA03D;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    width: 60px;
+    height: 60px;
+  }
+  .main::after {
+	transform: rotate(45deg);
+    left: 100;
+  }
+  .main::before {
+    transform: rotate(225deg);
+    left: -100
+  }
+  .inner-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #84271C;
+  }
+</style>
