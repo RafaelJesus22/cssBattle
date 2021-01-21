@@ -1,0 +1,52 @@
+<div class="container" >
+	<div class="down" ></div> 
+    <div class="up" > <div></div></div>
+  <div class="down right"></div>
+</div>
+
+<style>
+  body {
+    background:#62306D;
+    margin: 50px 50px;
+	display: flex;
+  }
+  .container, .down, .up div, .up {
+    position:absolute;
+    box-sizing: border-box;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+    background: #F7EC7D;
+    bottom: 0
+  }
+  .down {
+	  background: #F7EC7D;
+    width: 100px;
+    height: 100px;
+	  border-radius: 50% ;
+    top: -50;
+    left: 0;
+    background: #E38F66;
+    border: 20px solid  #AA445F
+  }
+  .down.right {
+    left: 200;
+  }
+  .up{
+	  background: #F7EC7D;
+    width: 100px;
+    height: 150px;
+	  border-radius: 50px 50px 0 0;
+    top: -150
+  }
+  .up div {
+    width: 100px;
+    height: 100px;
+	  border-radius: 50% ;
+    background: #AA445F;
+    border: 20px solid  #E38F66
+  }
+</style>
